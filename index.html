@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// El Arma Inteligente [BETA]</title>
+    <style>
+        /* --- ESTÉTICA CYPHERPUNK NEUTRAL --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            5% { opacity: 0.7; text-shadow: 0 0 3px rgba(100, 255, 218, 0.4); }
+            10% { opacity: 1; text-shadow: 0 0 6px rgba(100, 255, 218, 0.6); }
+            15% { opacity: 0.6; text-shadow: 0 0 2px rgba(100, 255, 218, 0.3); }
+            20% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+
+        body {
+            background-color: #000000;
+            color: #64FFDA; /* Cyan profesional */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-shadow: 0 0 3px rgba(100, 255, 218, 0.4);
+            overflow-x: hidden;
+        }
+
+        /* Capa de líneas de escaneo (CRT Effect) */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 3px
+            );
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.4);
+            border: 1px solid #64FFDA;
+            box-shadow: 0 0 20px rgba(100, 255, 218, 0.1);
+        }
+
+        .header {
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #64FFDA;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 6px;
+            color: #FFFFFF;
+            animation: text-flicker 5s infinite alternate;
+        }
+
+        .header .slogan {
+            margin: 10px 0 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #64FFDA;
+        }
+
+        .header .beta-tag {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 2px 10px;
+            border: 1px solid #FF4136;
+            color: #FF4136;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .navbar {
+            background-color: rgba(17, 34, 64, 0.3);
+            border-bottom: 1px solid #64FFDA;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .nav-tabs a {
+            display: inline-block;
+            padding: 8px 20px;
+            text-decoration: none;
+            color: #64FFDA;
+            border: 1px solid transparent;
+            margin: 0 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-tabs a:hover, .nav-tabs a.active {
+            background-color: #64FFDA;
+            color: #000000;
+            text-shadow: none;
+        }
+
+        .nav-tabs a.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            text-decoration: line-through;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #FFFFFF;
+            border-bottom: 1px solid #64FFDA;
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #64FFDA;
+            margin-top: 35px;
+            text-transform: uppercase;
+            border-left: 3px solid #64FFDA;
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+            color: #CCD6F6;
+        }
+
+        strong {
+            color: #FFFFFF;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+
+        .status-box {
+            background-color: rgba(100, 255, 218, 0.1);
+            border: 1px dashed #64FFDA;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #8892B0;
+            padding: 20px;
+            border-top: 1px solid #64FFDA;
+            background-color: rgba(17, 34, 64, 0.3);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .header h1 { font-size: 32px; }
+            .main-content { padding: 20px; }
+            .nav-tabs a { margin: 5px; padding: 5px 10px; font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>FOCO AI</h1>
+            <p class="slogan">LA ARMA INTELIGENTE</p>
+            <div class="beta-tag">System Status: Beta Test v0.9</div>
+        </header>
+
+        <nav class="navbar">
+            <div class="nav-tabs">
+                <a href="#" class="active">// INICIO //</a>
+                <a href="#" class="disabled">// BIBLIOTECA [OFFLINE] //</a>
+                <a href="#">// SERVICIOS //</a>
+                <a href="#">// CONTACTO //</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h2>&gt; NUESTRO MANIFIESTO</h2>
+            
+            <p>A veces parece que vivimos en un laberinto, ¿no? 🤔 Por un lado, un montón de información confusa, letra chica y reglas que nadie entiende. Por otro, esa sensación de estar solo y tener que adivinar para dónde correr. Es agotador.</p>
+            
+            <p><strong>Foco AI nació para ser esa luz que te ayuda a encontrar la salida. ✨</strong></p>
+
+            <div class="status-box">
+                <p>> <strong>ATENCIÓN:</strong> Estamos en fase de prueba. Los servicios de análisis personalizado están activos por cupos limitados. La Biblioteca de acceso libre se está cargando en el servidor central.</p>
+            </div>
+            
+            <p>No somos una empresa. Somos personas que creen que las cosas pueden ser más simples y más justas. Y para eso, nos movemos con estas ideas:</p>
+
+            <h3>1. PERSONAS AYUDANDO A PERSONAS (H2H)</h3>
+            <p>Olvidate de las etiquetas corporativas. Esto es <strong>Humano a Humano</strong>. No nos importa si sos el dueño de un café harto de que lo boludeen, un pibe ahorrando para su primera viola o alguien que solo quiere arreglar la moto sin que lo estafen. Acá estamos para darte una mano.</p>
+
+            <h3>2. EL CONOCIMIENTO ES LIBRE. POSTA.</h3>
+            <p>Creemos que la información útil tiene que estar al alcance de todos. Por eso, nuestras guías son <strong>Copyleft</strong>. Cuando la biblioteca esté online, vas a poder usar todo, compartirlo y hasta mejorarlo. Saber te da el poder de elegir mejor.</p>
+
+            <h3>3. NO VENDEMOS EL MAPA, TE TRAZAMOS LA RUTA</h3>
+            <p>Nuestras guías (el mapa) son gratis. Lo que nosotros hacemos es sentarnos con vos, mirar tu problema específico y decirte: "Ojo con este quilombo, mejor andá por acá que es más seguro". Pagás por nuestra experiencia aplicada a <strong>TU</strong> realidad.</p>
+
+            <h3>4. CONTRA LA CONFUSIÓN, NO CONTRA LA GENTE</h3>
+            <p>No tiramos piedras, <strong>prendemos la luz</strong>. 🔦 Nuestra pelea es contra la letra chica, los curros y la desinformación. Usamos datos para iluminar esos rincones oscuros donde se esconden los vivos de siempre.</p>
+
+            <h3>5. EL CAMBIO EMPIEZA DE A UNO</h3>
+            <p>El sistema se alimenta de tu duda. Nosotros lo matamos de hambre con certezas. 🚀 Foco AI es tu herramienta para que tomes el control y tus decisiones se basen en la posta, no en el "me parece".</p>
+        </main>
+
+        <footer class="footer">
+            <p>&gt;&gt; 2026 FOCO AI /// EL CONOCIMIENTO ES LIBRE /// DECODE. RESIST. UNPLUG.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
