@@ -180,12 +180,53 @@
             background-color: rgba(17, 34, 64, 0.3);
         }
 
-        /* Mobile responsiveness */
-        @media (max-width: 600px) {
-            .header h1 { font-size: 32px; }
-            .main-content { padding: 20px; }
-            .nav-tabs a { margin: 5px; padding: 5px 10px; font-size: 12px; }
-        }
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 600px) {
+    /* Сжимаем контейнер хедера */
+    .header {
+        padding: 15px 10px; /* Было 40px */
+    }
+
+    /* Уменьшаем шрифт и отступы заголовка */
+    .header h1 {
+        font-size: 32px;
+        line-height: 1.1;
+        margin-bottom: 5px;
+    }
+
+    /* Подтягиваем слоган */
+    .header .slogan {
+        font-size: 14px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+
+    /* Компактный статус-бар */
+    .header .beta-tag {
+        margin-top: 10px;
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+
+    /* Сжимаем навигацию */
+    .navbar {
+        padding: 8px 5px;
+    }
+    .nav-tabs a {
+        margin: 2px;
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    /* Убираем лишние отступы контента */
+    .main-content {
+        padding: 20px 15px;
+    }
+    
+    /* Уменьшаем размер иконок/заголовков в тексте */
+    h2 { font-size: 20px; }
+    h3 { font-size: 16px; margin-top: 25px; }
+}
     </style>
 </head>
 <body>
@@ -194,14 +235,13 @@
         <header class="header">
             <h1>FOCO AI</h1>
             <p class="slogan">EL ARMA INTELIGENTE</p>
-            <div class="beta-tag">System Status: Analysis Mode</div>
+            <div class="beta-tag">System Status: Analysis Mode [ACTIVE]</div>
         </header>
 
         <nav class="navbar">
             <div class="nav-tabs">
                 <a href="index.html">//源 PRINCIPIO//</a>
-                <a href="#" class="disabled">//蔵 BIBLIOTECA [OFFLINE]//</a>
-                <a href="#" class="active">//行 PRÁCTICA//</a>
+                <a href="library.html">//蔵 BIBLIOTECA//</a> <a href="#" class="active">//行 PRÁCTICA//</a>
                 <a href="https://T.ME/BOTETOMDMA">//縁 MÁS//</a>
             </div>
         </nav>

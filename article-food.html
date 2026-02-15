@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// Protocolo: Nutrición</title>
+    <style>
+        /* --- CORE STYLES (COPY FROM IMPORT TEMPLATE) --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+        body {
+            background-color: #000000;
+            color: #CCD6F6;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: " "; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+            z-index: 1000; pointer-events: none;
+        }
+        .container {
+            width: 90%; max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.6);
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
+        }
+        
+        /* --- ARTICLE HEADER --- */
+        .article-header { padding: 40px 20px; border-bottom: 1px solid #64FFDA; text-align: center; }
+        h1 { color: #64FFDA; margin: 0; font-size: 32px; animation: text-flicker 4s infinite; }
+        .meta-data { font-size: 12px; color: #8892B0; margin-top: 10px; text-transform: uppercase; }
+        
+        /* --- CONTENT STYLES --- */
+        .content { padding: 30px; }
+        h2 { color: #fff; border-bottom: 1px dashed #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #64FFDA; margin-top: 30px; text-transform: uppercase; }
+        p { margin-bottom: 20px; }
+        ul { list-style-type: square; color: #8892B0; }
+        li { margin-bottom: 10px; }
+        strong { color: #fff; }
+
+        /* --- CUSTOM BLOCKS --- */
+        .warning-box {
+            border: 1px solid #FF4136;
+            background: rgba(255, 65, 54, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            color: #FF4136;
+        }
+        .pro-tip {
+            border: 1px solid #64FFDA;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            background: rgba(100, 255, 218, 0.05);
+        }
+        
+        /* --- DATA TABLES --- */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .data-table th { border-bottom: 2px solid #64FFDA; padding: 10px; text-align: left; color: #64FFDA; }
+        .data-table td { border-bottom: 1px solid #333; padding: 10px; color: #CCD6F6; }
+        .data-table tr:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+        .back-btn {
+            display: inline-block; margin: 20px; color: #64FFDA;
+            text-decoration: none; border: 1px solid #64FFDA;
+            padding: 10px 20px; transition: all 0.3s;
+        }
+        .back-btn:hover { background: #64FFDA; color: #000; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="library.html" class="back-btn">< VOLVER A LA BIBLIOTECA</a>
+
+        <header class="article-header">
+            <h1>PROTOCOLO: SUPERVIVENCIA ALIMENTARIA</h1> <div class="meta-data">
+                ID: FOOD-001 /// TARGET: INFLATION HACK /// ACCESS: PUBLIC
+            </div>
+        </header>
+
+        <article class="content">
+            
+            <p><strong>La Realidad:</strong> La inflación te come el sueldo. No tenés tiempo. La tentación de pedir delivery es constante. </p>
+            <p>Este protocolo no es una dieta. Es una estrategia de guerra financiera y logística para no vivir a fideos. </p>
+
+            <h2>1. LA REGLA DE ORO (BARRIO VS CORPO)</h2>
+
+            <div class="warning-box">
+                <strong>🚫 ERROR TÍPICO: SUPERMERCADO TOTAL</strong><br>
+                Comprar verdura y carne en el súper es tirar dinero.<br>
+                Diferencia de precio detectada: <strong>~77% más caro</strong> que en el barrio.<br>
+                Además, la calidad es inferior (plástico vs fresco). </div>
+
+            <p><strong>El Algoritmo Correcto:</strong></p>
+            <ul>
+                <li><strong>Carnicería/Verdulería:</strong> Para frescos. Relación humana = mejores cortes y precios. </li>
+                <li><strong>Supermercado:</strong> SOLO para acopio de no perecederos (Arroz, Aceite, Limpieza) y Ofertas Bancarias. </li>
+            </ul>
+
+            <h2>2. EL ARSENAL (LA ALACENA) 📦</h2>
+            <p>Tené siempre este stock táctico. Si tenés esto, nunca necesitás pedir delivery. </p>
+            <ul>
+                <li><strong>Arroz & Legumbres:</strong> Energía barata y eterna. </li>
+                <li><strong>Huevos:</strong> La proteína más versátil (Desayuno/Cena en 5 min). </li>
+                <li><strong>Harina P.A.N.:</strong> Clave para Arepas (Buscala en Jumbo o Dietéticas). </li>
+                <li><strong>Condimentos:</strong> Sin especias, la supervivencia es miserable. </li>
+            </ul>
+
+            <h2>3. HACKING FINANCIERO: BANCOS 💳</h2>
+            <p>El súper es un campo de batalla. Solo vas con estrategia. </p>
+            
+            <div class="pro-tip">
+                <strong>TIP:</strong> Chequeá siempre la web del banco antes de ir. Los días cambian. </div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>DÍA</th>
+                        <th>TARGET (SÚPER)</th>
+                        <th>ARMA (BANCO)</th>
+                        <th>% AHORRO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Martes</td>
+                        <td>Coto</td>
+                        <td>Banco Ciudad</td>
+                        <td>20% </td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>Coto</td>
+                        <td>Banco Nación</td>
+                        <td>30% </td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>Carrefour</td>
+                        <td>Ualá</td>
+                        <td>15% </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>4. RADAR DE TEMPORADA (INVIERNO/PRIMAVERA) 📡</h2>
+            <p>Comer frutillas en invierno es un error de novato (caro y sin sabor). </p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>CATEGORÍA</th>
+                        <th>DISPONIBILIDAD ALTA (COMPRAR) ✅</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FRUTAS</td>
+                        <td>Limón, Mandarina, Naranja, Pomelo, Palta. </td>
+                    </tr>
+                    <tr>
+                        <td>VERDURAS</td>
+                        <td>Acelga, Espinaca, Batata, Calabaza, Brócoli. </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>5. EJECUCIÓN: BATCH COOKING 🧑‍🍳</h2>
+            <p><strong>El domingo invertís 2 horas. Te salvás la semana.</strong> </p>
+            <ul>
+                <li><strong>Horno Masivo:</strong> Bandeja llena de Calabaza, Batata, Cebolla. </li>
+                <li><strong>Arroz Base:</strong> Una olla grande. Sirve para todo. </li>
+                <li><strong>Proteína:</strong> Huevos duros (x6) o Pollo hervido desmenuzado. </li>
+            </ul>
+
+            <h2>6. PROTOCOLO DE EMERGENCIA (VIANDAS) 🚨</h2>
+            <p>Si llegás muerto a casa, no pidas pizza. Activá el Plan B.</p>
+            <div class="pro-tip">
+                Tené siempre 3-4 viandas congeladas en el freezer.<br>
+                No es vagancia, es <strong>gestión de crisis</strong>. </div>
+
+        </article>
+        
+        <div style="text-align: center; padding-bottom: 20px;">
+            <a href="library.html" class="back-btn">VOLVER AL ARSENAL</a>
+        </div>
+    </div>
+
+</body>
+</html>

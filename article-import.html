@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// Protocolo: Importación</title>
+    <style>
+        /* --- CORE STYLES (COPY FROM INDEX) --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+        body {
+            background-color: #000000;
+            color: #CCD6F6; /* Чуть мягче для чтения */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: " "; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+            z-index: 1000; pointer-events: none;
+        }
+        .container {
+            width: 90%; max-width: 800px; /* Уже для чтения */
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.6);
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
+        }
+        
+        /* --- ARTICLE SPECIFIC STYLES --- */
+        .article-header {
+            padding: 40px 20px;
+            border-bottom: 1px solid #64FFDA;
+            text-align: center;
+        }
+        h1 { color: #64FFDA; margin: 0; font-size: 32px; animation: text-flicker 4s infinite; }
+        .meta-data { font-size: 12px; color: #8892B0; margin-top: 10px; text-transform: uppercase; }
+        
+        .content { padding: 30px; }
+        h2 { color: #fff; border-bottom: 1px dashed #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #64FFDA; margin-top: 30px; }
+        p { margin-bottom: 20px; }
+        
+        /* Custom Blocks */
+        .warning-box {
+            border: 1px solid #FF4136;
+            background: rgba(255, 65, 54, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            color: #FF4136;
+        }
+        .math-block {
+            background: #112240;
+            border-left: 3px solid #64FFDA;
+            padding: 20px;
+            font-family: monospace;
+            color: #fff;
+            margin: 20px 0;
+        }
+        .pro-tip {
+            border: 1px solid #64FFDA;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        
+        /* Navigation Buttons */
+        .back-btn {
+            display: inline-block;
+            margin: 20px;
+            color: #64FFDA;
+            text-decoration: none;
+            border: 1px solid #64FFDA;
+            padding: 10px 20px;
+            transition: all 0.3s;
+        }
+        .back-btn:hover { background: #64FFDA; color: #000; }
+
+        ul { list-style-type: square; color: #8892B0; }
+        li { margin-bottom: 10px; }
+        strong { color: #fff; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="library.html" class="back-btn">< VOLVER A LA BIBLIOTECA</a>
+
+        <header class="article-header">
+            <h1>GUÍA DE IMPORTACIÓN: INSTRUMENTOS</h1> <div class="meta-data">
+                ID: IMP-001 /// DATE: 2026-02-12 /// ACCESS: PUBLIC
+            </div>
+        </header>
+
+        <article class="content">
+            
+            <p><strong>La Realidad:</strong> Querés ese pedal que te vuela la cabeza, pero acá te piden el triple. Traerlo es la única salida, pero la Aduana no es tu amiga. Esta guía es tu firewall contra los problemas. </p>
+
+            <h2>1. LOS DOS CAMINOS</h2>
+
+            <h3>Opción A: Correo Argentino (La Lotería) 🐢</h3>
+            <p>El paquete llega al país, llenás papeles en AFIP y esperás. </p>
+            <ul>
+                <li><strong>Pros:</strong> Franquicia de $50 USD (si no te pasás, no pagás impuesto). </li>
+                <li><strong>Contras:</strong> Tarda meses. Se puede perder. Te pueden citar a abrir la caja en persona. </li>
+                <li><strong>Veredicto:</strong> Solo para cuerdas, cables y cosas que no te duela perder. </li>
+            </ul>
+
+            <h3>Opción B: Courier Privado (DHL/FedEx) 🚀</h3>
+            <p>Te tocan el timbre y te dan la caja. Fin. </p>
+            <ul>
+                <li><strong>Pros:</strong> Llega en 5-10 días. Cero burocracia (ellos hacen la Aduana). Precio final predecible. </li>
+                <li><strong>Contras:</strong> Pagás por el servicio. Es más caro, pero es tu seguro. </li>
+                <li><strong>Veredicto:</strong> Para Guitarras, Sintes o Pedales caros: SIEMPRE COURIER. </li>
+            </ul>
+
+            <h2>2. LA MATEMÁTICA DEL DOLOR 🧮</h2>
+            <p>Olvidate del precio que ves en la web. La fórmula real para Courier es esta:</p>
+
+            <div class="math-block">
+                PRECIO FINAL ≈ (PRODUCTO + ENVÍO) x 1.6
+            </div>
+            
+            <p><strong>¿Por qué?</strong> Pagás impuestos sobre el valor CIF (Costo + Seguro + Flete). Ese ~60% extra cubre IVA, Tasas y gestión. </p>
+
+            <h2>3. ⚠️ ZONA DE PELIGRO (LEER O MORIR)</h2>
+
+            <div class="warning-box">
+                <strong>⚡ ALERTA DE VOLTAJE CRÍTICA</strong><br><br>
+                Si traés un amplificador o fuente de USA, viene configurado a <strong>110V</strong>.<br>
+                Argentina usa <strong>220V</strong>.<br>
+                Si lo enchufás directo a la pared, <strong>EXPLOTA</strong> en el acto.<br>
+                <br>
+                > SOLUCIÓN: Comprá un transformador 220v->110v ACÁ, antes de enchufar nada.
+            </div>
+
+            <div class="warning-box" style="border-color: #F1C40F; color: #F1C40F;">
+                <strong>🚫 REGLA DE LOS 3 UNITS</strong><br>
+                Nunca traigas más de 3 cosas iguales (ej: 4 pedales idénticos).<br>
+                Aduana lo considera "Fin Comercial" y te confisca el paquete. </div>
+
+            <h2>4. CHECKLIST ANTES DE COMPRAR ✅</h2>
+            <ul>
+                <li>[ ] <strong>Envío:</strong> ¿La tienda realmente envía a Argentina? (Sweetwater/Amazon suelen hacerlo). </li>
+                <li>[ ] <strong>Identidad:</strong> Tenés que tener CUIT y Clave Fiscal Nivel 3 en AFIP. </li>
+                <li>[ ] <strong>Honestidad:</strong> No mientas en el precio declarado. Si te agarran, la multa es peor. </li>
+                <li>[ ] <strong>Garantía:</strong> Asumí que no tenés garantía. Si se rompe, lo arreglás acá. </li>
+            </ul>
+
+            <div class="pro-tip">
+                <strong>TIP FOCO:</strong> No seas rata con el envío. Necesitás el instrumento, no un problema nuevo. </div>
+
+        </article>
+        
+        <div style="text-align: center; padding-bottom: 20px;">
+            <a href="library.html" class="back-btn">VOLVER AL ARSENAL</a>
+        </div>
+    </div>
+
+</body>
+</html>

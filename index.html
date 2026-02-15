@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foco AI /// El Arma Inteligente [BETA]</title>
+    <title>Foco AI /// El Arma Inteligente [ONLINE]</title>
     <style>
         /* --- ESTÉTICA CYPHERPUNK NEUTRAL --- */
         @keyframes text-flicker {
@@ -167,12 +167,53 @@
             background-color: rgba(17, 34, 64, 0.3);
         }
 
-        /* Mobile responsiveness */
-        @media (max-width: 600px) {
-            .header h1 { font-size: 32px; }
-            .main-content { padding: 20px; }
-            .nav-tabs a { margin: 5px; padding: 5px 10px; font-size: 12px; }
-        }
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 600px) {
+    /* Сжимаем контейнер хедера */
+    .header {
+        padding: 15px 10px; /* Было 40px */
+    }
+
+    /* Уменьшаем шрифт и отступы заголовка */
+    .header h1 {
+        font-size: 32px;
+        line-height: 1.1;
+        margin-bottom: 5px;
+    }
+
+    /* Подтягиваем слоган */
+    .header .slogan {
+        font-size: 14px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+
+    /* Компактный статус-бар */
+    .header .beta-tag {
+        margin-top: 10px;
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+
+    /* Сжимаем навигацию */
+    .navbar {
+        padding: 8px 5px;
+    }
+    .nav-tabs a {
+        margin: 2px;
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    /* Убираем лишние отступы контента */
+    .main-content {
+        padding: 20px 15px;
+    }
+    
+    /* Уменьшаем размер иконок/заголовков в тексте */
+    h2 { font-size: 20px; }
+    h3 { font-size: 16px; margin-top: 25px; }
+}
     </style>
 </head>
 <body>
@@ -181,14 +222,13 @@
         <header class="header">
             <h1>FOCO AI</h1>
             <p class="slogan">EL ARMA INTELIGENTE</p>
-            <div class="beta-tag">System Status: Beta Test v1.0</div>
+            <div class="beta-tag">System Status: ONLINE v1.1</div>
         </header>
 
         <nav class="navbar">
             <div class="nav-tabs">
                 <a href="#" class="active">//源 PRINCIPIO//</a>
-                <a href="#" class="disabled">//蔵 BIBLIOTECA [OFFLINE]//</a>
-                <a href="practica.html">//行 PRÁCTICA//</a>
+                <a href="library.html">//蔵 BIBLIOTECA//</a> <a href="practica.html">//行 PRÁCTICA//</a>
                 <a href="https://T.ME/BOTETOMDMA">//縁 MÁS//</a>
             </div>
         </nav>
@@ -201,7 +241,7 @@
             <p><strong>Foco AI nació para ser esa luz que te ayuda a encontrar la salida. ✨</strong></p>
 
             <div class="status-box">
-                <p>> <strong>ATENCIÓN:</strong> Estamos en fase de prueba. Los servicios de análisis personalizado están activos por cupos limitados. La Biblioteca de acceso libre se está cargando en el servidor central.</p>
+                <p>> <strong>SYSTEM UPDATE:</strong> La Biblioteca Central está <strong>ONLINE</strong> y operativa. Acceso libre habilitado a los protocolos de supervivencia (Nutrición & Importación).</p>
             </div>
             
             <p>
@@ -213,8 +253,7 @@
 <h3>1. EL CONOCIMIENTO ES LIBRE. POSTA.</h3>
 <p>
     La información útil debe ser de dominio público. Por definición, las guías operan bajo licencia <strong>Copyleft</strong>. 
-    Cuando la biblioteca esté online, el acceso será total: usar, compartir y mejorar. 
-    Saber otorga la capacidad de ejecución.
+    La biblioteca está online y el acceso es total: usar, compartir y mejorar. Saber otorga la capacidad de ejecución.
 </p>
 
 <h3>2. EL MAPA ES GRATIS. LA RUTA SE CALCULA.</h3>
@@ -241,7 +280,7 @@
 <br>
 <p style="font-family: monospace; color: #666;">
     // SIGNED: FIXER_01<br>
-    // DATE: 11.02.2026
+    // DATE: 12.02.2026
 </p>
             
         </main>
