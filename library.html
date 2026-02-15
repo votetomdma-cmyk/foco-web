@@ -37,7 +37,7 @@
             box-shadow: 0 0 20px rgba(100, 255, 218, 0.1);
         }
         
-        /* --- HEADER & NAV (EXACT COPY FROM INDEX) --- */
+        /* --- HEADER (IDENTICAL TO INDEX) --- */
         .header {
             padding: 40px 20px;
             text-align: center;
@@ -46,9 +46,9 @@
 
         .header h1 {
             margin: 0;
-            font-size: 54px; /* БЫЛО 42px, СТАЛО 54px КАК НА ГЛАВНОЙ */
+            font-size: 54px;
             font-weight: bold;
-            letter-spacing: 6px; /* ДОБАВЛЕНА РАЗРЯДКА */
+            letter-spacing: 6px;
             color: #FFFFFF;
             animation: text-flicker 5s infinite alternate;
         }
@@ -71,9 +71,28 @@
             text-transform: uppercase;
         }
 
-        .navbar { background-color: rgba(17, 34, 64, 0.3); border-bottom: 1px solid #64FFDA; padding: 12px; text-align: center; }
-        .nav-tabs a { display: inline-block; padding: 8px 20px; text-decoration: none; color: #64FFDA; margin: 0 10px; font-weight: bold; text-transform: uppercase; }
-        .nav-tabs a:hover, .nav-tabs a.active { background-color: #64FFDA; color: #000000; text-shadow: none; }
+        /* --- NAVBAR (IDENTICAL TO INDEX) --- */
+        .navbar { 
+            background-color: rgba(17, 34, 64, 0.3); 
+            border-bottom: 1px solid #64FFDA; 
+            padding: 12px; 
+            text-align: center; 
+        }
+        .nav-tabs a { 
+            display: inline-block; 
+            padding: 8px 20px; 
+            text-decoration: none; 
+            color: #64FFDA; 
+            border: 1px solid transparent; /* Явно задаем прозрачную рамку */
+            margin: 0 10px; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+        }
+        .nav-tabs a:hover, .nav-tabs a.active { 
+            background-color: #64FFDA; 
+            color: #000000; 
+            text-shadow: none; 
+        }
         
         /* --- LIBRARY GRID --- */
         .library-grid {
@@ -115,53 +134,29 @@
         
         .footer { text-align: center; font-size: 12px; color: #8892B0; padding: 20px; border-top: 1px solid #64FFDA; }
         
-/* --- MOBILE OPTIMIZATION --- */
-@media (max-width: 600px) {
-    /* Сжимаем контейнер хедера */
-    .header {
-        padding: 15px 10px; /* Было 40px */
-    }
+        /* --- MOBILE OPTIMIZATION (UPDATED) --- */
+        @media (max-width: 600px) {
+            /* 1. Сжимаем Хедер */
+            .header { padding: 15px 10px; }
+            .header h1 { font-size: 32px; line-height: 1.1; margin-bottom: 5px; }
+            .header .slogan { font-size: 14px; margin-top: 5px; letter-spacing: 1px; }
+            .header .beta-tag { margin-top: 10px; padding: 2px 8px; font-size: 10px; }
 
-    /* Уменьшаем шрифт и отступы заголовка */
-    .header h1 {
-        font-size: 32px;
-        line-height: 1.1;
-        margin-bottom: 5px;
-    }
+            /* 2. Сжимаем Навигацию (Синхронизация с Index) */
+            .navbar { padding: 8px 5px; }
+            .nav-tabs a { margin: 2px; padding: 5px 8px; font-size: 11px; }
 
-    /* Подтягиваем слоган */
-    .header .slogan {
-        font-size: 14px;
-        margin-top: 5px;
-        letter-spacing: 1px;
-    }
-
-    /* Компактный статус-бар */
-    .header .beta-tag {
-        margin-top: 10px;
-        padding: 2px 8px;
-        font-size: 10px;
-    }
-
-    /* Сжимаем навигацию */
-    .navbar {
-        padding: 8px 5px;
-    }
-    .nav-tabs a {
-        margin: 2px;
-        padding: 5px 8px;
-        font-size: 11px;
-    }
-
-    /* Убираем лишние отступы контента */
-    .main-content {
-        padding: 20px 15px;
-    }
-    
-    /* Уменьшаем размер иконок/заголовков в тексте */
-    h2 { font-size: 20px; }
-    h3 { font-size: 16px; margin-top: 25px; }
-}
+            /* 3. ЧИНИМ СЕТКУ БИБЛИОТЕКИ */
+            .library-grid {
+                padding: 20px 15px; /* Уменьшаем отступы по бокам */
+                grid-template-columns: 1fr; /* Одна колонка на всю ширину */
+                gap: 15px;
+            }
+            /* Позволяем карточкам сжиматься меньше 300px */
+            .book-card {
+                min-width: 0; 
+            }
+        }
     </style>
 </head>
 <body>
