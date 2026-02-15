@@ -75,7 +75,7 @@
         .nav-tabs a { display: inline-block; padding: 8px 20px; text-decoration: none; color: #64FFDA; margin: 0 10px; font-weight: bold; text-transform: uppercase; border: 1px solid transparent; }
         .nav-tabs a:hover, .nav-tabs a.active { background-color: #64FFDA; color: #000000; text-shadow: none; }
         
-        /* --- SEARCH BOX (HIGH VISIBILITY MODE) --- */
+        /* --- SEARCH BOX --- */
         .search-container {
             padding: 30px 30px 0 30px;
             display: flex;
@@ -86,30 +86,25 @@
         .search-input {
             width: 100%;
             max-width: 100%;
-            /* Более темный и плотный фон для контраста */
             background: rgba(10, 25, 47, 0.8); 
-            /* Полная рамка, чтобы выделялось */
             border: 1px solid #333; 
             border-bottom: 2px solid #64FFDA;
-            /* Ярко-белый текст */
             color: #FFFFFF; 
             font-family: 'Courier New', monospace;
             font-size: 18px;
-            padding: 15px; /* Чуть больше воздуха внутри */
+            padding: 15px;
             outline: none;
             transition: all 0.3s;
             text-transform: uppercase;
             text-align: center;
-            /* Легкая тень */
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
         .search-input:focus {
-            border-color: #64FFDA; /* Вся рамка загорается при клике */
+            border-color: #64FFDA;
             background: rgba(10, 25, 47, 1);
             box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
         }
         .search-input::placeholder {
-            /* Светло-серый голубой, хорошо читается */
             color: #8892B0; 
             opacity: 1;
         }
@@ -154,7 +149,6 @@
         
         .footer { text-align: center; font-size: 12px; color: #8892B0; padding: 20px; border-top: 1px solid #64FFDA; }
         
-        /* NO RESULTS MESSAGE */
         .no-results {
             grid-column: 1 / -1;
             text-align: center;
@@ -219,6 +213,34 @@
                 <div class="card-title">Protocolo: Supervivencia Alimentaria</div>
                 <div class="card-desc">Estrategia anti-inflación. Batch cooking, radar de temporada y cómo no vivir a fideos.</div>
                 <a href="article-food.html" class="read-btn">> LEER PROTOCOLO</a>
+            </div>
+
+            <div class="book-card">
+                <div class="category-tag" style="border-color: #BD93F9; color: #BD93F9;">MECHA_HACK</div>
+                <div class="card-title">Protocolo: Mantenimiento Moto</div>
+                <div class="card-desc">Repuestos, mecánicos chantas y cómo importar cubiertas. Guía para no quedar a pata.</div>
+                <a href="article-moto.html" class="read-btn">> LEER PROTOCOLO</a>
+            </div>
+
+            <div class="book-card">
+                <div class="category-tag" style="border-color: #FF79C6; color: #FF79C6;">BUILD_HACK</div>
+                <div class="card-title">Protocolo: Materiales & Obra</div>
+                <div class="card-desc">Cómo evitar estafas digitales en corralones, hacer acopio inteligente y detectar ladrillos malos.</div>
+                <a href="article-construction.html" class="read-btn">> LEER PROTOCOLO</a>
+            </div>
+
+            <div class="book-card">
+                <div class="category-tag" style="border-color: #50FA7B; color: #50FA7B;">AGRO_HACK</div>
+                <div class="card-title">Protocolo: Cultivo Indoor</div>
+                <div class="card-desc">REPROCANN, luces LED reales vs marketing y cómo armar tu setup sin quemar dinero.</div>
+                <a href="article-grow.html" class="read-btn">> LEER PROTOCOLO</a>
+            </div>
+
+            <div class="book-card">
+                <div class="category-tag" style="border-color: #FFB86C; color: #FFB86C;">GASTRO_HACK</div>
+                <div class="card-title">Protocolo: Gestión Gastronómica</div>
+                <div class="card-desc">Sobrevivir a la crisis: defensa ante la AGC, ingeniería de menú y compras estratégicas en Av. Jujuy.</div>
+                <a href="article-gastro.html" class="read-btn">> LEER PROTOCOLO</a>
             </div>
 
             <div class="book-card">

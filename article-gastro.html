@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// Protocolo: Gestión Gastronómica</title>
+    <style>
+        /* --- CORE STYLES (MATCHING LIBRARY) --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+        body {
+            background-color: #000000;
+            color: #CCD6F6;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: " "; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+            z-index: 1000; pointer-events: none;
+        }
+        .container {
+            width: 90%; max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.6);
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
+        }
+        
+        /* --- ARTICLE HEADER --- */
+        .article-header { padding: 40px 20px; border-bottom: 1px solid #64FFDA; text-align: center; }
+        h1 { color: #64FFDA; margin: 0; font-size: 32px; animation: text-flicker 4s infinite; }
+        .meta-data { font-size: 12px; color: #8892B0; margin-top: 10px; text-transform: uppercase; }
+        
+        /* --- CONTENT STYLES --- */
+        .content { padding: 30px; }
+        h2 { color: #fff; border-bottom: 1px dashed #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #64FFDA; margin-top: 30px; text-transform: uppercase; }
+        p { margin-bottom: 20px; }
+        ul { list-style-type: square; color: #8892B0; }
+        li { margin-bottom: 10px; }
+        strong { color: #fff; }
+
+        /* --- CUSTOM BLOCKS --- */
+        .warning-box {
+            border: 1px solid #FF4136;
+            background: rgba(255, 65, 54, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            color: #FF4136;
+        }
+        .pro-tip {
+            border: 1px solid #64FFDA;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            background: rgba(100, 255, 218, 0.05);
+        }
+        
+        /* --- DATA TABLES --- */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .data-table th { border-bottom: 2px solid #64FFDA; padding: 10px; text-align: left; color: #64FFDA; }
+        .data-table td { border-bottom: 1px solid #333; padding: 10px; color: #CCD6F6; }
+        .data-table tr:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+        .back-btn {
+            display: inline-block; margin: 20px; color: #64FFDA;
+            text-decoration: none; border: 1px solid #64FFDA;
+            padding: 10px 20px; transition: all 0.3s;
+        }
+        .back-btn:hover { background: #64FFDA; color: #000; }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 600px) {
+            .container { width: 100%; margin: 0; border: none; }
+            h1 { font-size: 24px; }
+            .content { padding: 20px; }
+            .data-table { font-size: 12px; }
+            .data-table th, .data-table td { padding: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="library.html" class="back-btn">< VOLVER A LA BIBLIOTECA</a>
+
+        <header class="article-header">
+            <h1>PROTOCOLO: SUPERVIVENCIA GASTRONÓMICA</h1> <div class="meta-data">
+                ID: GASTRO-001 /// TARGET: RESTAURANT DEFENSE /// ACCESS: PUBLIC
+            </div>
+        </header>
+
+        <article class="content">
+            
+            <p><strong>La Realidad:</strong> El sector vive un "Efecto Tijera": los costos operativos (luz, alquiler, insumos) suben verticalmente, mientras el consumo cae un 30%. </p>
+            <p>Sobrevivir hoy no depende de tu receta secreta, sino de la ingeniería de costos y la defensa regulatoria. </p>
+
+            <h2>1. LA DEFENSA REGULATORIA (AGC & ANMAT) 🛡️</h2>
+
+            <div class="warning-box">
+                <strong>🚫 ERROR FATAL: LA CADENA DE SUMINISTRO ILEGAL</strong><br>
+                Si la AGC encuentra un producto sin registro (RNE/RNPA) en tu depósito, es clausura inmediata.<br>
+                El riesgo no es solo el proveedor, SOS VOS por tenerlo.<br>
+                Caso real: Aceites "Mito Andino" y "Soma" prohibidos por ser ilegales. </div>
+
+            <p><strong>El Checklist de Inmunidad:</strong></p>
+            <ul>
+                <li><strong>Verificar RNE/RNPA:</strong> Exigí los certificados a cada proveedor nuevo. No aceptes "está en trámite". </li>
+                <li><strong>Control de Temperaturas:</strong> Llevá una planilla diaria. Es lo primero que mira el inspector. </li>
+                <li><strong>Higiene "Debajo de la Alfombra":</strong> Limpiá detrás de las heladeras y en los desagües. Ahí es donde buscan la clausura. </li>
+            </ul>
+
+            <h2>2. INGENIERÍA DE MENÚ: CORTAR LA GRASA 🔪</h2>
+            <p>En crisis, la carta extensa es un suicidio financiero. La tendencia es la simplificación.</p>
+            <div class="pro-tip">
+                <strong>ELIMINAR A LOS "ZOMBIES":</strong><br>
+                Sacá de la carta los platos con ingredientes importados (Salmón, Pulpo) o de altísima volatilidad.<br>
+                Reemplazalos por insumos locales estables. Hacé un "Menú de Contingencia". </div>
+
+            <h2>3. ABASTECIMIENTO TÁCTICO: EL EJE JUJUY 🍽️</h2>
+            <p>Para vajilla y equipamiento, olvidate de los shoppings. El centro de gravedad es la <strong>Avenida Jujuy (San Cristóbal)</strong>.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>MATERIAL</th>
+                        <th>USO RECOMENDADO</th>
+                        <th>VENTAJA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Porcelana (Nacional)</strong></td>
+                        <td>Bodegones / Alta Rotación</td>
+                        <td>Barata ($75k-$110k docena). Reposición fácil. </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gres (Stoneware)</strong></td>
+                        <td>Café de Especialidad</td>
+                        <td>Estética "Instagram". Retiene temperatura. Caro pero diferencia la marca. </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vidrio Vitrificado</strong></td>
+                        <td>Comedores / Catering</td>
+                        <td>Indestructible. Costo de reposición casi nulo. </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>4. NUEVOS MODELOS: DARK KITCHENS 👻</h2>
+            <p>Si el alquiler te está matando, considerá la mutación.</p>
+            <ul>
+                <li><strong>Estructura de Costos:</strong> Alquiler en zona industrial + Cero mozos = Costos fijos bajísimos. </li>
+                <li><strong>Escalabilidad:</strong> Desde una cocina podés lanzar 3 marcas virtuales distintas para testear mercado. </li>
+                <li><strong>Rentabilidad:</strong> Márgenes del 15-50% vs 5-15% en tradicionales. </li>
+            </ul>
+
+            <h2>5. GESTIÓN DE CRISIS 🚨</h2>
+            <p>Si llega la clausura (faja en la puerta):</p>
+            <div class="pro-tip">
+                <strong>NO ROMPAS LA FAJA.</strong><br>
+                Violar una clausura es delito penal y contravención grave.<br>
+                Contactá a la Unidad de Faltas inmediatamente y documentá todo. </div>
+
+        </article>
+        
+        <div style="text-align: center; padding-bottom: 20px;">
+            <a href="library.html" class="back-btn">VOLVER AL ARSENAL</a>
+        </div>
+    </div>
+
+</body>
+</html>

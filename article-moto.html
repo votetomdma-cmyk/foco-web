@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// Protocolo: Moto Maintenance</title>
+    <style>
+        /* --- CORE STYLES (MATCHING LIBRARY) --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+        body {
+            background-color: #000000;
+            color: #CCD6F6;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: " "; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+            z-index: 1000; pointer-events: none;
+        }
+        .container {
+            width: 90%; max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.6);
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
+        }
+        
+        /* --- ARTICLE HEADER --- */
+        .article-header { padding: 40px 20px; border-bottom: 1px solid #64FFDA; text-align: center; }
+        h1 { color: #64FFDA; margin: 0; font-size: 32px; animation: text-flicker 4s infinite; }
+        .meta-data { font-size: 12px; color: #8892B0; margin-top: 10px; text-transform: uppercase; }
+        
+        /* --- CONTENT STYLES --- */
+        .content { padding: 30px; }
+        h2 { color: #fff; border-bottom: 1px dashed #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #64FFDA; margin-top: 30px; text-transform: uppercase; }
+        p { margin-bottom: 20px; }
+        ul { list-style-type: square; color: #8892B0; }
+        li { margin-bottom: 10px; }
+        strong { color: #fff; }
+
+        /* --- CUSTOM BLOCKS --- */
+        .warning-box {
+            border: 1px solid #FF4136;
+            background: rgba(255, 65, 54, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            color: #FF4136;
+        }
+        .pro-tip {
+            border: 1px solid #64FFDA;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            background: rgba(100, 255, 218, 0.05);
+        }
+        
+        /* --- DATA TABLES --- */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .data-table th { border-bottom: 2px solid #64FFDA; padding: 10px; text-align: left; color: #64FFDA; }
+        .data-table td { border-bottom: 1px solid #333; padding: 10px; color: #CCD6F6; }
+        .data-table tr:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+        .back-btn {
+            display: inline-block; margin: 20px; color: #64FFDA;
+            text-decoration: none; border: 1px solid #64FFDA;
+            padding: 10px 20px; transition: all 0.3s;
+        }
+        .back-btn:hover { background: #64FFDA; color: #000; }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 600px) {
+            .container { width: 100%; margin: 0; border: none; }
+            h1 { font-size: 24px; }
+            .content { padding: 20px; }
+            .data-table { font-size: 12px; }
+            .data-table th, .data-table td { padding: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="library.html" class="back-btn">< VOLVER A LA BIBLIOTECA</a>
+
+        <header class="article-header">
+            <h1>PROTOCOLO: MANTENIMIENTO MOTO</h1> <div class="meta-data">
+                ID: MOTO-001 /// TARGET: LOGISTICS SURVIVAL /// ACCESS: PUBLIC
+            </div>
+        </header>
+
+        <article class="content">
+            
+            <p><strong>La Realidad:</strong> Tener moto en Argentina no es solo conducir. Es un deporte extremo logístico. </p>
+            <p>Faltan repuestos, los precios están dolarizados y los mecánicos... bueno, es una lotería. Este protocolo es para que tu moto no termine juntando polvo en un taller por 6 meses. </p>
+
+            <h2>1. LA REGLA DEL "HÁGALO USTED MISMO" (DIY) 🛠️</h2>
+
+            <div class="warning-box">
+                <strong>🚫 ERROR CRÍTICO: CONFIANZA CIEGA</strong><br>
+                "No entiendo nada de mecánica" es la frase más cara que podés decir.<br>
+                Te expone a diagnósticos falsos ("es el bendix interno") y sobreprecios.<br>
+                Si no sabés qué se rompió, no sabés qué estás pagando. </div>
+
+            <p><strong>El Algoritmo de Defensa:</strong></p>
+            <ul>
+                <li><strong>YouTube University:</strong> Antes de ir al taller, mirá 3 tutoriales sobre tu falla. Llegá con información. </li>
+                <li><strong>Pedí las piezas viejas:</strong> Exigí SIEMPRE los repuestos cambiados y los envases vacíos (aceite). Si se niegan, es red flag. </li>
+                <li><strong>Aprender lo básico:</strong> Cambio de aceite, tensado de cadena y cambio de pastillas. Hacelo vos. Ahorrás mano de obra y asegurás calidad. </li>
+            </ul>
+
+            <h2>2. HACKING DE REPUESTOS: LA ESTRATEGIA FRANKENSTEIN 🧟</h2>
+            <p>No encontrás la pieza para tu Zanella/Motomel/Corven? Dejá de buscar por marca.</p>
+            
+            <div class="pro-tip">
+                <strong>DATAZO:</strong> El 90% de las motos chinas 150cc usan el mismo motor "varillero".<br>
+                Las piezas son intercambiables. </div>
+
+            <p><strong>Protocolo de Compra Genérica:</strong></p>
+            <ol>
+                <li>Desarmá la pieza rota.</li>
+                <li>Llevala al mostrador de la repuestera.</li>
+                <li><strong>NO DIGAS LA MARCA DE TU MOTO.</strong> Decí: "Dame uno igual a este".</li>
+                <li>Si decís "Zanella RX", te dicen "no hay". Si mostrás la pieza, te dan la de una Motomel que es idéntica. </li>
+            </ol>
+
+            <h2>3. IMPORTACIÓN TÁCTICA: COURIER & SEGURIDAD ✈️</h2>
+            <p>Para cosas críticas (Cubiertas, Cascos, Frenos de marca), el mercado local te mata. La desregulación 2025/26 cambió el juego.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>CATEGORÍA</th>
+                        <th>ESTRATEGIA</th>
+                        <th>FUENTE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>SEGURIDAD</strong><br>(Cubiertas, Cascos)</td>
+                        <td>IMPORTAR VÍA COURIER (Amazon/eBay).<br>El certificado CHAS ya no se exige a particulares.</td>
+                        <td>Exterior </td>
+                    </tr>
+                    <tr>
+                        <td><strong>MOTOR</strong><br>(Pistones, Válvulas)</td>
+                        <td>COMPRAR ORIGINAL (OEM).<br>Lo barato acá sale carísimo (rotura de motor).</td>
+                        <td>Local / Oficial </td>
+                    </tr>
+                    <tr>
+                        <td><strong>COSMÉTICA</strong><br>(Plásticos, Espejos)</td>
+                        <td>GENÉRICO / ALTERNATIVO.<br>No gastes en plásticos originales, se van a rayar igual.</td>
+                        <td>MercadoLibre </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>4. TIER LIST DE MARCAS (SOPORTE POSVENTA) 📊</h2>
+            <p>Basado en inteligencia colectiva de la comunidad (r/MotosArg y foros). </p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>MARCA</th>
+                        <th>ESTATUS REPUESTOS</th>
+                        <th>VEREDICTO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>BAJAJ</strong></td>
+                        <td>🟢 ALTA</td>
+                        <td>"Sobran a patadas". La opción racional. </td>
+                    </tr>
+                    <tr>
+                        <td><strong>HONDA / YAMAHA</strong></td>
+                        <td>🟡 MEDIA/ALTA</td>
+                        <td>Fiables, pero hay faltantes puntuales graves. Caro. </td>
+                    </tr>
+                    <tr>
+                        <td><strong>GILERA / HERO</strong></td>
+                        <td>🟢 BUENA</td>
+                        <td>Tienen portal web oficial de repuestos. Transparencia total. </td>
+                    </tr>
+                    <tr>
+                        <td><strong>SUZUKI</strong></td>
+                        <td>🔴 CRÍTICO</td>
+                        <td>Representante (La Emilia) con pésima fama. Repuestos carísimos e inexistentes. </td>
+                    </tr>
+                    <tr>
+                        <td><strong>CF MOTO / VOGE</strong></td>
+                        <td>🔴 BAJA</td>
+                        <td>"Autopercibidas premium". Lindas motos, posventa de terror. </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>5. PROTOCOLO DE INFLACIÓN 💸</h2>
+            <p>Los precios de repuestos suben EN DÓLARES ("Inflación en dólares"). Guardar pesos es perder.</p>
+            <div class="pro-tip">
+                <strong>STOCK PERSONAL:</strong> Comprá aceite, filtros, transmisión y CUBIERTAS <strong>antes</strong> de necesitarlos.<br>
+                Tu estantería rinde más que un Plazo Fijo. </div>
+
+        </article>
+        
+        <div style="text-align: center; padding-bottom: 20px;">
+            <a href="library.html" class="back-btn">VOLVER AL ARSENAL</a>
+        </div>
+    </div>
+
+</body>
+</html>

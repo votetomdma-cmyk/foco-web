@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// Protocolo: Cultivo Indoor</title>
+    <style>
+        /* --- CORE STYLES (MATCHING LIBRARY) --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+        body {
+            background-color: #000000;
+            color: #CCD6F6;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: " "; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+            z-index: 1000; pointer-events: none;
+        }
+        .container {
+            width: 90%; max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.6);
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
+        }
+        
+        /* --- ARTICLE HEADER --- */
+        .article-header { padding: 40px 20px; border-bottom: 1px solid #64FFDA; text-align: center; }
+        h1 { color: #64FFDA; margin: 0; font-size: 32px; animation: text-flicker 4s infinite; }
+        .meta-data { font-size: 12px; color: #8892B0; margin-top: 10px; text-transform: uppercase; }
+        
+        /* --- CONTENT STYLES --- */
+        .content { padding: 30px; }
+        h2 { color: #fff; border-bottom: 1px dashed #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #64FFDA; margin-top: 30px; text-transform: uppercase; }
+        p { margin-bottom: 20px; }
+        ul { list-style-type: square; color: #8892B0; }
+        li { margin-bottom: 10px; }
+        strong { color: #fff; }
+
+        /* --- CUSTOM BLOCKS --- */
+        .warning-box {
+            border: 1px solid #FF4136;
+            background: rgba(255, 65, 54, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            color: #FF4136;
+        }
+        .pro-tip {
+            border: 1px solid #64FFDA;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            background: rgba(100, 255, 218, 0.05);
+        }
+        
+        /* --- DATA TABLES --- */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .data-table th { border-bottom: 2px solid #64FFDA; padding: 10px; text-align: left; color: #64FFDA; }
+        .data-table td { border-bottom: 1px solid #333; padding: 10px; color: #CCD6F6; }
+        .data-table tr:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+        .back-btn {
+            display: inline-block; margin: 20px; color: #64FFDA;
+            text-decoration: none; border: 1px solid #64FFDA;
+            padding: 10px 20px; transition: all 0.3s;
+        }
+        .back-btn:hover { background: #64FFDA; color: #000; }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 600px) {
+            .container { width: 100%; margin: 0; border: none; }
+            h1 { font-size: 24px; }
+            .content { padding: 20px; }
+            .data-table { font-size: 12px; }
+            .data-table th, .data-table td { padding: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="library.html" class="back-btn">< VOLVER A LA BIBLIOTECA</a>
+
+        <header class="article-header">
+            <h1>PROTOCOLO: CULTIVO INDOOR</h1> <div class="meta-data">
+                ID: GROW-001 /// TARGET: LEGAL & EFFICIENCY /// ACCESS: PUBLIC
+            </div>
+        </header>
+
+        <article class="content">
+            
+            <p><strong>La Realidad:</strong> Cultivar en Argentina pasó de ser clandestino a ser un derecho de salud (REPROCANN). Pero el mercado es una selva de luces chinas y marketing engañoso. </p>
+            <p>Este protocolo no es sobre botánica básica. Es sobre ingeniería, eficiencia energética y compras inteligentes. </p>
+
+            <h2>1. LA BASE LEGAL: REPROCANN O NADA 🛡️</h2>
+
+            <div class="warning-box">
+                <strong>🚫 SIN PAPELES NO HAY PARAÍSO</strong><br>
+                Cultivar sin REPROCANN es jugar a la ruleta rusa con la Ley Penal 23.737.<br>
+                El registro te habilita legalmente a tener <strong>9 plantas en floración</strong> y transportar hasta 40g de flores.<br>
+                > No seas paranoico, sé legal. Tramitalo ayer.
+            </div>
+
+            <h2>2. ILUMINACIÓN: LA TRAMPA DE LOS WATTS 💡</h2>
+            <p>Olvidate de los "Watts" que dice la caja. Lo único que importa es la <strong>Eficacia (µmol/J)</strong>. Es decir: cuánta luz genera por cada peso de electricidad que pagás.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>TECNOLOGÍA</th>
+                        <th>EFICIENCIA</th>
+                        <th>VEREDICTO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Galponeras</strong></td>
+                        <td>Baja (~1.2 µmol/J)</td>
+                        <td>Solo para vegetativo o pobreza extrema. Generan mucho calor.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>COB (Growtech)</strong></td>
+                        <td>Media (~1.8 µmol/J)</td>
+                        <td>Caballito de batalla. Ruidosos (fan), pero cumplen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quantum Board</strong></td>
+                        <td>Alta (>2.3 µmol/J)</td>
+                        <td><strong>EL ESTÁNDAR.</strong> Chips Samsung/Citizen. Marcas como GS Iluminaciones (IP65) o equipos armados. Menos calor, más flores.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>3. LA ESTRUCTURA: NO COMPRES BASURA ⛺</h2>
+            <p>Una carpa barata te sale cara cuando se rompe el cierre en plena floración y te entra luz (hermafroditismo garantizado).</p>
+            <ul>
+                <li><strong>Gama Entrada:</strong> Bellavita. Cumple, pero tratala con amor.</li>
+                <li><strong>Gama Media (Recomendada):</strong> Garden Highpro. Estructura más sólida, cierres decentes.</li>
+                <li><strong>Gama Alta:</strong> Secret Jardin. Para el que quiere que dure 10 años.</li>
+            </ul>
+
+            <h2>4. LOGÍSTICA DE INSUMOS: EL MODELO HÍBRIDO 🚚</h2>
+            <p>No compres todo en el mismo lugar. Optimizá según el peso y el volumen.</p>
+
+            <div class="pro-tip">
+                <strong>Estrategia de Compra:</strong><br>
+                1. <strong>Sustrato (Tierra):</strong> Compralo en MercadoLibre (ej. Growmix 80L). ¿Por qué? <strong>Envío Gratis.</strong> El correo subsidia el peso.<br>
+                2. <strong>Fertilizantes/Medición:</strong> Compralos en Grow Shops especializados (Baires Grow, Cogoshop). Buscá descuentos por transferencia (10-20% OFF).
+            </div>
+
+            <h2>5. INTELIGENCIA COLECTIVA 🧠</h2>
+            <p>Las reseñas en las webs de los Grows no existen o son falsas. Si querés saber si un panel LED explota o si un fertilizante funciona, no le preguntes al vendedor.</p>
+            <p>Tu fuente de verdad es <strong>r/ArgEntos</strong>. Ahí está la data real de la comunidad, sin filtro de marketing.</p>
+
+        </article>
+        
+        <div style="text-align: center; padding-bottom: 20px;">
+            <a href="library.html" class="back-btn">VOLVER AL ARSENAL</a>
+        </div>
+    </div>
+
+</body>
+</html>
