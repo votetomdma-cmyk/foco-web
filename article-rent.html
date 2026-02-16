@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// Protocolo: Alquileres & DNU</title>
+    <style>
+        /* --- CORE STYLES (MATCHING LIBRARY) --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+        body {
+            background-color: #000000;
+            color: #CCD6F6;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: " "; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+            z-index: 1000; pointer-events: none;
+        }
+        .container {
+            width: 90%; max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.6);
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
+        }
+        
+        /* --- ARTICLE HEADER --- */
+        .article-header { padding: 40px 20px; border-bottom: 1px solid #64FFDA; text-align: center; }
+        h1 { color: #64FFDA; margin: 0; font-size: 32px; animation: text-flicker 4s infinite; }
+        .meta-data { font-size: 12px; color: #8892B0; margin-top: 10px; text-transform: uppercase; }
+        
+        /* --- CONTENT STYLES --- */
+        .content { padding: 30px; }
+        h2 { color: #fff; border-bottom: 1px dashed #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #64FFDA; margin-top: 30px; text-transform: uppercase; }
+        p { margin-bottom: 20px; }
+        ul { list-style-type: square; color: #8892B0; }
+        li { margin-bottom: 10px; }
+        strong { color: #fff; }
+
+        /* --- CUSTOM BLOCKS --- */
+        .warning-box {
+            border: 1px solid #FF4136;
+            background: rgba(255, 65, 54, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            color: #FF4136;
+        }
+        .pro-tip {
+            border: 1px solid #64FFDA;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            background: rgba(100, 255, 218, 0.05);
+        }
+        
+        /* --- DATA TABLES --- */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .data-table th { border-bottom: 2px solid #64FFDA; padding: 10px; text-align: left; color: #64FFDA; }
+        .data-table td { border-bottom: 1px solid #333; padding: 10px; color: #CCD6F6; }
+        .data-table tr:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+        .back-btn {
+            display: inline-block; margin: 20px; color: #64FFDA;
+            text-decoration: none; border: 1px solid #64FFDA;
+            padding: 10px 20px; transition: all 0.3s;
+        }
+        .back-btn:hover { background: #64FFDA; color: #000; }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 600px) {
+            .container { width: 100%; margin: 0; border: none; }
+            h1 { font-size: 24px; }
+            .content { padding: 20px; }
+            .data-table { font-size: 12px; }
+            .data-table th, .data-table td { padding: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="library.html" class="back-btn">< VOLVER A LA BIBLIOTECA</a>
+
+        <header class="article-header">
+            <h1>PROTOCOLO: ALQUILERES & DNU</h1> <div class="meta-data">
+                ID: RENT-001 /// TARGET: LEASE SURVIVAL /// ACCESS: PUBLIC
+            </div>
+        </header>
+
+        <article class="content">
+            
+            <p><strong>La Realidad:</strong> El DNU 70/2023 derogó la Ley de Alquileres. Ahora vale (casi) todo. El mercado se inundó de oferta, pero las condiciones son agresivas. Elegir mal el índice de ajuste puede costarte millones de pesos al año. </p>
+            <p>Este protocolo es una guía táctica para negociar tu contrato en la era de la "Libertad Contractual". </p>
+
+            <h2>1. LA GUERRA DE LOS ÍNDICES: ICL vs IPC 📈</h2>
+            <p>El índice que elijas define tu futuro financiero. No son lo mismo.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ÍNDICE</th>
+                        <th>CÓMO FUNCIONA</th>
+                        <th>¿A QUIÉN BENEFICIA?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IPC (Inflación Pura)</strong></td>
+                        <td>Sigue el precio del súper. Sube rápido y fuerte.</td>
+                        <td>Al <strong>PROPIETARIO</strong>. Mantiene la rentabilidad real.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICL (Mix Salario + Inflación)</strong></td>
+                        <td>Promedia inflación y sueldos (RIPTE). Sube más lento.</td>
+                        <td>Al <strong>INQUILINO</strong>. Amortigua los picos inflacionarios.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Casa Propia</strong></td>
+                        <td>Toma el menor valor entre sueldos e inflación.</td>
+                        <td>Al <strong>INQUILINO</strong> (El más favorable, pero difícil de conseguir).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>2. LA TRAMPA DE LA FRECUENCIA 🗓️</h2>
+            
+            <div class="warning-box">
+                <strong>🚫 NO ACEPTES AJUSTES MENSUALES:</strong><br>
+                Si tu contrato se ajusta por IPC todos los meses, tu alquiler se vuelve impredecible.<br>
+                > ESTRATEGIA: Negociá ajustes <strong>Trimestrales (cada 3 meses)</strong> o Cuatrimestrales.<br>
+                Esto te da "aire" para planificar tu economía doméstica.
+            </div>
+
+            <h2>3. CLÁUSULAS ABUSIVAS (RED FLAGS) 🚩</h2>
+            <p>Con la desregulación, aparecieron cláusulas creativas y peligrosas. Si ves esto, no firmes o negociá.</p>
+            <ul>
+                <li><strong>"Dólar Billete o Nada":</strong> Cláusulas que te prohíben pagar en pesos al cambio MEP si hay cepo. Es riesgoso.</li>
+                <li><strong>Multa de Limpieza Fija:</strong> Te cobran "pintura y limpieza" al salir, sin importar cómo dejaste el depto. Exigí que se detalle "contra factura".</li>
+                <li><strong>Renuncia a la Imprevisión:</strong> Cláusula que dice que no podés reclamar aunque haya una hiperinflación que haga imposible el pago.</li>
+            </ul>
+
+            <h2>4. ESCENARIOS 2026: LA TRAMPA DE LAS TARIFAS 💡</h2>
+            <p>El alquiler no es tu único costo. Las expensas y servicios (Luz/Gas) están subiendo por encima de la inflación.</p>
+            <div class="pro-tip">
+                <strong>AUDITORÍA PREVIA:</strong><br>
+                Antes de alquilar, pedí las últimas 3 liquidaciones de expensas.<br>
+                Sumá Alquiler + Expensas + Luz/Gas. Ese es tu <strong>Costo Habitacional Real</strong>.<br>
+                Si supera el 40% de tus ingresos, estás en zona de riesgo de default.
+            </div>
+
+            <h2>5. PROTOCOLO DE NEGOCIACIÓN 🤝</h2>
+            <p>En este mercado, todo se negocia. Usá estos puntos:</p>
+            <ol>
+                <li><strong>Prioridad ICL:</strong> Siempre pedí ICL Semestral o Trimestral.</li>
+                <li><strong>Si el dueño exige IPC:</strong> Pedí un precio de entrada (alquiler inicial) más bajo para compensar las subas futuras.</li>
+                <li><strong>Rescisión:</strong> Asegurate de poder irte a los 6 meses pagando una multa lógica (1 mes de alquiler), no todo el contrato.</li>
+            </ol>
+
+        </article>
+        
+        <div style="text-align: center; padding-bottom: 20px;">
+            <a href="library.html" class="back-btn">VOLVER AL ARSENAL</a>
+        </div>
+    </div>
+
+</body>
+</html>
