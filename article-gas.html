@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// Protocolo: Crisis de Gas</title>
+    <style>
+        /* --- CORE STYLES (MATCHING LIBRARY) --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+        body {
+            background-color: #000000;
+            color: #CCD6F6;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: " "; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+            z-index: 1000; pointer-events: none;
+        }
+        .container {
+            width: 90%; max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.6);
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
+        }
+        
+        /* --- ARTICLE HEADER --- */
+        .article-header { padding: 40px 20px; border-bottom: 1px solid #64FFDA; text-align: center; }
+        h1 { color: #64FFDA; margin: 0; font-size: 32px; animation: text-flicker 4s infinite; }
+        .meta-data { font-size: 12px; color: #8892B0; margin-top: 10px; text-transform: uppercase; }
+        
+        /* --- CONTENT STYLES --- */
+        .content { padding: 30px; }
+        h2 { color: #fff; border-bottom: 1px dashed #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #64FFDA; margin-top: 30px; text-transform: uppercase; }
+        p { margin-bottom: 20px; }
+        ul { list-style-type: square; color: #8892B0; }
+        li { margin-bottom: 10px; }
+        strong { color: #fff; }
+
+        /* --- CUSTOM BLOCKS --- */
+        .warning-box {
+            border: 1px solid #FF4136;
+            background: rgba(255, 65, 54, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            color: #FF4136;
+        }
+        .pro-tip {
+            border: 1px solid #64FFDA;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            background: rgba(100, 255, 218, 0.05);
+        }
+        
+        /* --- DATA TABLES --- */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .data-table th { border-bottom: 2px solid #64FFDA; padding: 10px; text-align: left; color: #64FFDA; }
+        .data-table td { border-bottom: 1px solid #333; padding: 10px; color: #CCD6F6; }
+        .data-table tr:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+        .back-btn {
+            display: inline-block; margin: 20px; color: #64FFDA;
+            text-decoration: none; border: 1px solid #64FFDA;
+            padding: 10px 20px; transition: all 0.3s;
+        }
+        .back-btn:hover { background: #64FFDA; color: #000; }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 600px) {
+            .container { width: 100%; margin: 0; border: none; }
+            h1 { font-size: 24px; }
+            .content { padding: 20px; }
+            .data-table { font-size: 12px; }
+            .data-table th, .data-table td { padding: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="library.html" class="back-btn">< VOLVER A LA BIBLIOTECA</a>
+
+        <header class="article-header">
+            <h1>PROTOCOLO: GAS & METROGAS</h1> <div class="meta-data">
+                ID: GAS-001 /// TARGET: INFRASTRUCTURE DEFENSE /// ACCESS: PUBLIC
+            </div>
+        </header>
+
+        <article class="content">
+            
+            <p><strong>La Realidad:</strong> Un corte de gas en Buenos Aires no es una reparación, es un evento traumático. Si MetroGAS te corta el servicio por una fuga, prepárate para 3 a 6 meses sin gas. </p>
+            <p>Este protocolo te enseña a identificar el peligro, evitar la "Clausura Preventiva" y usar la tecnología para no romper paredes. </p>
+
+            <h2>1. LA REGLA DEL MIEDO: EL CEPO (FORMULARIO 1022) 🚫</h2>
+
+            <div class="warning-box">
+                <strong>🚨 NO LLAMES A METROGAS "POR LAS DUDAS"</strong><br>
+                Si sentís olor a gas, primero cerrá tu llave de paso y llamá a un gasista matriculado de confianza.<br>
+                Si llamás a la emergencia de MetroGAS, ellos tienen la obligación legal de cortar el suministro a todo el edificio si detectan la mínima anomalía.<br>
+                Una vez que ponen el Cepo (Formulario 1022), entras en un bucle burocrático infernal. </div>
+
+            <h2>2. EL HACK DE LA RESINA (NAG-203) 🧪</h2>
+            <p>Los edificios viejos tienen caños con roscas que pierden. Antes, la única solución era romper todas las paredes y cambiar la cañería (obra millonaria).</p>
+            <div class="pro-tip">
+                <strong>LA SALVACIÓN LÍQUIDA:</strong><br>
+                La norma <strong>NAG-203</strong> permite reparar fugas inyectando una resina polimérica.<br>
+                <strong>Ventaja:</strong> Se hace en 1 día, sin romper paredes y cuesta una fracción de la obra civil.<br>
+                <strong>Requisito:</strong> La fuga debe ser menor a 5 litros/hora. </div>
+
+            <h2>3. REJILLAS Y VENTILACIÓN: CAUSA #1 DE CORTE 💨</h2>
+            <p>El 80% de las inspecciones fallan por esto. La normativa NAG-200 cambió y es retroactiva.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ELEMENTO</th>
+                        <th>REGLA DE ORO</th>
+                        <th>RIESGO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Rejillas (15x15)</strong></td>
+                        <td>Obligatorias arriba y abajo. PROHIBIDO taparlas con muebles o cinta. </td>
+                        <td>Corte inmediato por riesgo de Monóxido (CO). </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Calefón en Baño</strong></td>
+                        <td><strong>ILEGAL.</strong> No importa si "siempre estuvo ahí". </td>
+                        <td>Retiro de medidor y clausura. Debe moverse a la cocina. </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Manguera de Goma</strong></td>
+                        <td>Prohibida en la cocina. Solo se permite corrugado metálico aprobado. </td>
+                        <td>Rechazo de inspección. </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>4. INQUILINOS: TUS DERECHOS SIN GAS ⚖️</h2>
+            <p>Si cortan el gas, la propiedad pierde sus condiciones de "habitabilidad".</p>
+            <ul>
+                <li><strong>Rescisión Anticipada:</strong> Podés romper el contrato SIN multa (Art. 1203 CCyC) por falta de servicios esenciales. </li>
+                <li><strong>Reducción de Alquiler:</strong> Tenés derecho a exigir una rebaja mientras dure el corte (para costear termotanque eléctrico y hornallas). </li>
+                <li><strong>DNU 70/2023:</strong> Cuidado. Si tu contrato nuevo dice que renunciás a estos derechos, estás complicado. Revisá la letra chica. </li>
+            </ul>
+
+            <h2>5. CHECKLIST VISUAL ANTES DE ALQUILAR/COMPRAR 👀</h2>
+            <p>No firmes nada sin mirar esto:</p>
+            <ul>
+                <li>[ ] <strong>Sala de Medidores:</strong> ¿Tiene luces con bocha de vidrio y reja (antiexplosivas)? Si hay cables pelados, el corte es inminente. </li>
+                <li>[ ] <strong>Caños a la vista:</strong> Si ves caños pintados de amarillo brillante, es buena señal (obra reciente). Si están oxidados o pintados de otro color, peligro. </li>
+                <li>[ ] <strong>Cocina:</strong> ¿El calefón es "Tiro Balanceado"? (Tiene doble caño). Si es "Tiro Natural" en un ambiente cerrado, es una bomba de tiempo regulatoria. </li>
+            </ul>
+
+        </article>
+        
+        <div style="text-align: center; padding-bottom: 20px;">
+            <a href="library.html" class="back-btn">VOLVER AL ARSENAL</a>
+        </div>
+    </div>
+
+</body>
+</html>

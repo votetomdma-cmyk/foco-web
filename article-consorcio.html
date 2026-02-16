@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco AI /// Protocolo: Expensas & Consorcios</title>
+    <style>
+        /* --- CORE STYLES (MATCHING LIBRARY) --- */
+        @keyframes text-flicker {
+            0% { opacity: 0.9; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+            100% { opacity: 1; text-shadow: 0 0 5px rgba(100, 255, 218, 0.5); }
+        }
+        body {
+            background-color: #000000;
+            color: #CCD6F6;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: " "; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+            z-index: 1000; pointer-events: none;
+        }
+        .container {
+            width: 90%; max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(10, 25, 47, 0.6);
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
+        }
+        
+        /* --- ARTICLE HEADER --- */
+        .article-header { padding: 40px 20px; border-bottom: 1px solid #64FFDA; text-align: center; }
+        h1 { color: #64FFDA; margin: 0; font-size: 32px; animation: text-flicker 4s infinite; }
+        .meta-data { font-size: 12px; color: #8892B0; margin-top: 10px; text-transform: uppercase; }
+        
+        /* --- CONTENT STYLES --- */
+        .content { padding: 30px; }
+        h2 { color: #fff; border-bottom: 1px dashed #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #64FFDA; margin-top: 30px; text-transform: uppercase; }
+        p { margin-bottom: 20px; }
+        ul { list-style-type: square; color: #8892B0; }
+        li { margin-bottom: 10px; }
+        strong { color: #fff; }
+
+        /* --- CUSTOM BLOCKS --- */
+        .warning-box {
+            border: 1px solid #FF4136;
+            background: rgba(255, 65, 54, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            color: #FF4136;
+        }
+        .pro-tip {
+            border: 1px solid #64FFDA;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            background: rgba(100, 255, 218, 0.05);
+        }
+        
+        /* --- DATA TABLES --- */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .data-table th { border-bottom: 2px solid #64FFDA; padding: 10px; text-align: left; color: #64FFDA; }
+        .data-table td { border-bottom: 1px solid #333; padding: 10px; color: #CCD6F6; }
+        .data-table tr:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+        .back-btn {
+            display: inline-block; margin: 20px; color: #64FFDA;
+            text-decoration: none; border: 1px solid #64FFDA;
+            padding: 10px 20px; transition: all 0.3s;
+        }
+        .back-btn:hover { background: #64FFDA; color: #000; }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 600px) {
+            .container { width: 100%; margin: 0; border: none; }
+            h1 { font-size: 24px; }
+            .content { padding: 20px; }
+            .data-table { font-size: 12px; }
+            .data-table th, .data-table td { padding: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="library.html" class="back-btn">< VOLVER A LA BIBLIOTECA</a>
+
+        <header class="article-header">
+            <h1>PROTOCOLO: EXPENSAS & CONSORCIOS</h1> <div class="meta-data">
+                ID: PROP-001 /// TARGET: HOUSING SURVIVAL /// ACCESS: PUBLIC
+            </div>
+        </header>
+
+        <article class="content">
+            
+            <p><strong>La Realidad:</strong> Vivir en un edificio en Argentina no es comunidad, es política. El Consorcio es una persona jurídica que puede embargarte. Si sos inquilino, pagás pero no votás. Si sos propietario, sos responsable de las deudas. </p>
+            <p>Este protocolo es para auditar tus expensas y entender las reglas del juego antes de firmar nada. </p>
+
+            <h2>1. LA TRAMPA DEL INQUILINO (DNU 70/2023) 🏚️</h2>
+
+            <div class="warning-box">
+                <strong>🚫 ALERTA DE CONTRATO:</strong><br>
+                Históricamente, el inquilino solo pagaba expensas "Ordinarias".<br>
+                El DNU 70/2023 impuso la "libertad contractual". Si tu contrato dice que pagás <strong>TODO</strong>, tenés que pagar hasta el cambio de ascensores.<br>
+                > SOLUCIÓN: Leé el contrato antes de firmar. Exigí la cláusula de "Solo Expensas Ordinarias Habituales". </div>
+
+            <h2>2. DESGLOSE DE GASTOS: ¿QUÉ ESTÁS PAGANDO? 💸</h2>
+            <p>No todas las expensas son iguales. Saber la diferencia es tu única defensa.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>TIPO</th>
+                        <th>QUÉ INCLUYE</th>
+                        <th>QUIÉN DEBERÍA PAGAR (Idealmente)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ORDINARIAS</strong></td>
+                        <td>Sueldos, luz pasillos, abono ascensores, limpieza. Gastos para que el edificio <em>funcione</em>. </td>
+                        <td>Inquilino (por uso). </td>
+                    </tr>
+                    <tr>
+                        <td><strong>EXTRAORDINARIAS</strong></td>
+                        <td>Reformas, pintura fachada, indemnizaciones por despido, cambio de cañerías. Gastos que <em>valorizan</em> la propiedad. </td>
+                        <td>Propietario (Dueño). </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>3. EL FACTOR "ENCARGADO" (SUTERH) 🧹</h2>
+            <p>El sueldo del encargado representa, en promedio, el <strong>50-60%</strong> de tus expensas. </p>
+            <ul>
+                <li><strong>Bonos No Remunerativos:</strong> Son frecuentes y golpean directo al bolsillo. </li>
+                <li><strong>Riesgo Laboral:</strong> Si el consorcio despide al encargado, la indemnización es millonaria. </li>
+                <li><strong>Juicios:</strong> Si el consorcio pierde un juicio laboral, responden los propietarios con su patrimonio. </li>
+            </ul>
+
+            <h2>4. AUDITORÍA: MODELO "MIS EXPENSAS" 🕵️‍♂️</h2>
+            <p>En CABA, la administración <strong>está obligada por Ley 941</strong> a ser transparente. Si tu liquidación es un Excel borroso, te están robando. </p>
+            
+            <div class="pro-tip">
+                <strong>RED FLAGS EN TU LIQUIDACIÓN:</strong><br>
+                1. <strong>Gastos Vagos:</strong> "Reparaciones varias" sin número de factura ni CUIT del proveedor. <br>
+                2. <strong>Coeficientes Erróneos:</strong> Tu % de pago debe coincidir con el Reglamento, no ser un número inventado. <br>
+                3. <strong>Reparaciones Privadas:</strong> Arreglaron el caño de la cocina del 4B con plata del consorcio. (Si es caño maestro ok, si es flexible no). </div>
+
+            <h2>5. GOBERNANZA: EL PODER DEL VOTO 🗳️</h2>
+            <p>El consorcio no es una democracia de "una persona, un voto". Es una plutocracia.</p>
+            <ul>
+                <li><strong>El Coeficiente Manda:</strong> Votás según el % de tu departamento. Un piso de 3 ambientes vale por cinco monoambientes. </li>
+                <li><strong>El Silencio es Consentimiento (Art. 2060):</strong> Si no vas a la asamblea, y te notifican una decisión, tenés 15 días para oponerte. Si no decís nada, se cuenta como voto a favor. </li>
+                <li><strong>Consejo de Propietarios:</strong> No administran, <em>controlan</em>. Es tu primera línea de defensa para revisar facturas antes de pagar. </li>
+            </ul>
+
+        </article>
+        
+        <div style="text-align: center; padding-bottom: 20px;">
+            <a href="library.html" class="back-btn">VOLVER AL ARSENAL</a>
+        </div>
+    </div>
+
+</body>
+</html>
